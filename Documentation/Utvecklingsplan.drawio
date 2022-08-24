@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T10:55:25.001Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="lmNHsuEulqISpFzFCH_0" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-24T06:42:15.923Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="94eg8jVLyevd1ty2RBO4" version="20.2.4" type="github">
   <diagram id="wEKSGGPF87rSig4s3-Ul" name="Sida-1">
-    <mxGraphModel dx="1422" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,16 +8,49 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BBzz1Qv0iKT6kKimgJni-1" value="Spelare som åker kan åka fram och tillbaka" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="50" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="150" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BBzz1Qv0iKT6kKimgJni-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-2" target="BBzz1Qv0iKT6kKimgJni-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BBzz1Qv0iKT6kKimgJni-2" value="Begränsa X-led förflyttning" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="50" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BBzz1Qv0iKT6kKimgJni-4" value="" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="50" width="120" height="60" as="geometry" />
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-4" target="BBzz1Qv0iKT6kKimgJni-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-4" value="fiend som åker framåt och skadar spelaren vid kontakt" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-6" value="Inspererat av space invaders" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="30" width="680" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-7" target="BBzz1Qv0iKT6kKimgJni-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-7" value="Exploderande Minor" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-9" target="BBzz1Qv0iKT6kKimgJni-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-9" value="Vapen" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-11" target="BBzz1Qv0iKT6kKimgJni-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-11" value="Project settings physics 2D" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-13" target="BBzz1Qv0iKT6kKimgJni-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-13" value="PackageManager" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-16" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(248, 249, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;TakeDamage player collision.&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="290" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
