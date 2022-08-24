@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-24T06:34:21.390Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="1HvfUe1dPLwuQESws7ZL" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-24T06:42:15.923Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="94eg8jVLyevd1ty2RBO4" version="20.2.4" type="github">
   <diagram id="wEKSGGPF87rSig4s3-Ul" name="Sida-1">
     <mxGraphModel dx="1422" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
         <mxCell id="BBzz1Qv0iKT6kKimgJni-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-7" target="BBzz1Qv0iKT6kKimgJni-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BBzz1Qv0iKT6kKimgJni-7" value="Exploderande Tunnor" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="BBzz1Qv0iKT6kKimgJni-7" value="Exploderande Minor" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="150" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BBzz1Qv0iKT6kKimgJni-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BBzz1Qv0iKT6kKimgJni-9" target="BBzz1Qv0iKT6kKimgJni-11">
