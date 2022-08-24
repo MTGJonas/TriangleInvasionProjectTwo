@@ -1,9 +1,20 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] Weapon _weapon;
+    int _activeWeapon;
+    [SerializeField] List<Weapon> _weapons;
+
+    private void Awake()
+    {
+        _weapons = GetComponentsInChildren<Weapon>().ToList();
+        _activeWeapon = 0;
+
+    }
     public void TakeDamage()
     {
         SceneManager.LoadScene(0);
@@ -13,7 +24,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButton("Jump"))
         {
-            _weapon.TryFire();
+            _weapons[_activeWeapon].TryFire();
         }
     }
 
@@ -24,5 +35,11 @@ public class Player : MonoBehaviour
         {
             iTakeDamage.TakeDamage();
         }
+    }
+
+    public void PowerUpWeapon()
+    {
+        if(_activeWeapon < _weapons.Count-1)
+            _activeWeapon++;
     }
 }

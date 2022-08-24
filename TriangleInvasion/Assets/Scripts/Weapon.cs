@@ -6,7 +6,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Projectile _projectile;
-    [SerializeField] Transform _firePoint;
+    [SerializeField] List<Transform> _firePoint;
     [SerializeField] float _fireRate;
     
     float _nextFireTime = 0;
@@ -17,8 +17,12 @@ public class Weapon : MonoBehaviour
 
         if (canFire)
         {
-            Instantiate(_projectile,_firePoint.position,Quaternion.identity);
-            _nextFireTime = Time.time + _fireRate;
+            foreach(Transform t in _firePoint)
+            {
+                Instantiate(_projectile, t.position, t.rotation);
+                _nextFireTime = Time.time + _fireRate;
+            }
+            
         }
 
     }

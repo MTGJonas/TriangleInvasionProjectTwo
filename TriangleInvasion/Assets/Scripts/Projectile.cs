@@ -1,13 +1,17 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Projectile :MonoBehaviour 
 {
     [SerializeField] float _speed = 4f;
     [SerializeField] float _lifeTime = 2f;
+    
 
     private void Update()
     {
-        transform.position += Vector3.up* Time.deltaTime*_speed;
+        
+        transform.Translate(Vector3.up* Time.deltaTime*_speed);
+        
 
         _lifeTime -= Time.deltaTime;
 
