@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     int _activeWeapon;
-    [SerializeField] List<Weapon> _weapons;
+    List<Weapon> _weapons;
 
     private void Awake()
     {
