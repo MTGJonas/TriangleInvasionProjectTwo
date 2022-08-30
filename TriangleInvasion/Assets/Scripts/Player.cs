@@ -4,10 +4,11 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, ITakeDamage
 {
     int _activeWeapon;
     List<Weapon> _weapons;
+    Health _health;
 
     private void Awake()
     {

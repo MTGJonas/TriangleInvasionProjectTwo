@@ -1,12 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Enemy : BaseMoveForward, ITakeDamage
 {
     [SerializeField] GameObject _expolsion;
     private Collider2D _collider;
     [SerializeField] SpriteRenderer _spriteRenderer;
-    [SerializeField] Health _healt;
+    [SerializeField] Health _health;
+    [SerializeField] int _scoreValue = 10;
     private bool isDestroyed;
+    public static event Action<int> OnEnemyDeath;
 
     private void Awake()
     {
@@ -17,13 +20,14 @@ public class Enemy : BaseMoveForward, ITakeDamage
 
     public void TakeDamage()
     {
-        _healt.ReduceHealth();
-        if(_healt.IsAlive == false && !isDestroyed)
+        _health.ReduceHealth();
+        if(_health.IsAlive == false && !isDestroyed)
             DestoryThis();
     }
 
     private void DestoryThis()
     {
+        OnEnemyDeath?.Invoke(_scoreValue);
         isDestroyed = true;
         Destroy(gameObject, 1);
         _collider.enabled = false;

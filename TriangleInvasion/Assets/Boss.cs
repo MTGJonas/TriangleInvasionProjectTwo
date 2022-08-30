@@ -13,6 +13,7 @@ public class Boss : MonoBehaviour, ITakeDamage
     [SerializeField] Health _health;
     [SerializeField] List<GameObject> _explosions;
     bool battleStarted = false;
+    [SerializeField] Weapon weapon;
 
     public void TakeDamage()
     {
@@ -64,6 +65,7 @@ public class Boss : MonoBehaviour, ITakeDamage
             transform.position = new Vector3(clampedX, transform.position.y, 0);
         }
 
+        weapon.TryFire();
         if (_health.HealthPct <= 0f)
         {
             StartCoroutine(PlayExplosions());
@@ -72,9 +74,7 @@ public class Boss : MonoBehaviour, ITakeDamage
 
     private void FirstState()
     {
-        if(!battleStarted)
-            return;
-
+        battleStarted = true;
         transform.position += Vector3.right * _xDirection * Time.deltaTime;
         if (!(transform.position.x < 2 && transform.position.x > -2f))
         {
