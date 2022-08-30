@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : MonoBehaviour, ITakeDamage
+public class Boss : EnemyBase, ITakeDamage
 {
     private enum bossState { first, second, defeated}
 
@@ -22,8 +22,11 @@ public class Boss : MonoBehaviour, ITakeDamage
         _health.ReduceHealth();
     }
     // Update is called once per frame
-    void Update()
-    {if (GameManager.Instance.State != GameManager.GameState.Boss)
+    protected override void Update()
+    {
+        base.Update();
+    
+        if (GameManager.Instance.State != GameManager.GameState.Boss)
             return;
 
         switch (state)

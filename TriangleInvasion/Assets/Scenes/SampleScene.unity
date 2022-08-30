@@ -1649,6 +1649,7 @@ GameObject:
   - component: {fileID: 724615475}
   - component: {fileID: 724615477}
   - component: {fileID: 724615476}
+  - component: {fileID: 724615478}
   m_Layer: 0
   m_Name: Score (TMP)
   m_TagString: Untagged
@@ -1673,8 +1674,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -568.2612, y: -382.00037}
+  m_SizeDelta: {x: 473.4775, y: 101.9993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724615476
 MonoBehaviour:
@@ -1723,8 +1724,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 72
+  m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1773,6 +1774,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724615474}
   m_CullTransparentMesh: 1
+--- !u!114 &724615478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724615474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c5bb79f13d36849b7b45fb214e656e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textField: {fileID: 724615476}
 --- !u!1001 &747249460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2003,7 +2017,6 @@ GameObject:
   m_Component:
   - component: {fileID: 805027835}
   - component: {fileID: 805027834}
-  - component: {fileID: 805027836}
   - component: {fileID: 805027838}
   - component: {fileID: 805027837}
   - component: {fileID: 805027839}
@@ -2055,19 +2068,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &805027836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805027833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a525c5e520bbe8f4ebb30ea4db1930db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _initSpeed: 1
 --- !u!114 &805027837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2093,6 +2093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37a26b20535c4e6428e21cda4116e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _initSpeed: 1
+  _scoreValue: 500
   _health: {fileID: 805027837}
   _explosions:
   - {fileID: 34075811}

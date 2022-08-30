@@ -109,9 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fcb66178cad34643ad509cbcd2de49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movespeed: 0.2
+  _initSpeed: 1
+  _scoreValue: 50
   _expolsion: {fileID: 1247311275606653}
-  _healt: {fileID: 821877655618635453}
+  _spriteRenderer: {fileID: 6622218840800571965}
+  _health: {fileID: 821877655618635453}
 --- !u!114 &821877655618635453
 MonoBehaviour:
   m_ObjectHideFlags: 0

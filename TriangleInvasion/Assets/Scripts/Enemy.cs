@@ -1,16 +1,14 @@
 ﻿using System;
 using UnityEngine;
 
-public class Enemy : BaseMoveForward, ITakeDamage
+public class Enemy : EnemyBase, ITakeDamage
 {
     [SerializeField] GameObject _expolsion;
     private Collider2D _collider;
     [SerializeField] SpriteRenderer _spriteRenderer;
     [SerializeField] Health _health;
-    [SerializeField] int _scoreValue = 10;
     private bool isDestroyed;
-    public static event Action<int> OnEnemyDeath;
-
+    
     private void Awake()
     {
         _collider = GetComponent<Collider2D>();
@@ -27,7 +25,7 @@ public class Enemy : BaseMoveForward, ITakeDamage
 
     private void DestoryThis()
     {
-        OnEnemyDeath?.Invoke(_scoreValue);
+        BroadcastScore();
         isDestroyed = true;
         Destroy(gameObject, 1);
         _collider.enabled = false;

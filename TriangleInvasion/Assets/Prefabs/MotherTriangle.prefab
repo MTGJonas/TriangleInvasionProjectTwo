@@ -124,9 +124,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initSpeed: 1
+  _scoreValue: 200
   _expolsion: {fileID: 3133181752853417111}
   _spriteRenderer: {fileID: 3299456602372558723}
-  _healt: {fileID: 809816561156988395}
+  _health: {fileID: 809816561156988395}
 --- !u!1 &8917326551279255686
 GameObject:
   m_ObjectHideFlags: 0

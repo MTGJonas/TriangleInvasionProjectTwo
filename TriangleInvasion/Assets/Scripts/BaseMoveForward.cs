@@ -11,7 +11,7 @@ public class BaseMoveForward : MonoBehaviour
     float _movespeed;
 
     
-    private void Update()
+    protected virtual void Update()
     {
         transform.Translate(Vector3.down * ((_movespeed+GameManager.Instance.BaseSpeed) * Time.deltaTime));
     }
